@@ -33,4 +33,12 @@ git diff --cached
 
 13. git push origin master # up to remote server
 
+14. git config --global push.default simple
+
+15. git remote add OlderTree https://github.com/OlderTree/study01.git
+
+16. git pull OlderTree master
+
+17. git push OlderTree master
+
 	
