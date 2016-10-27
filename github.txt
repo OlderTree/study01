@@ -1,0 +1,36 @@
+1. git config
+git config --global user.name "OlderTree"
+git config --global user.email "dyunspace@outlook.com"
+
+2. git clone https://github...
+
+3. mkdir project
+cd project
+git init
+
+4. Look at .git directory
+ls -al
+
+5. create or modify files
+touch file1 file2
+vim file1 
+echo "xxxxxx  xxxx " >> file1
+
+6. git status
+
+7. git add file1
+
+8. git status
+
+9. look at diff
+git diff --cached
+
+10. git commit -m "note:...."
+
+11. git commit -a -m "add all files ..."
+
+12. git rm #delete file
+
+13. git push origin master # up to remote server
+
+	
