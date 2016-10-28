@@ -43,4 +43,40 @@ git diff --cached
 
 18. git config --global credential.helper store
 	
-100. test branch
+-----------branch----------
+19. git branch experimental
+
+20. git checkout experimental
+
+21. git branch
+
+22. git status
+
+23. git add fielname1
+
+24. git commit -m "note:xxxxxx"
+
+25. git merge -m "note:xxxxxxxxxxxxxxx" experimental
+
+26. git commit -a -m "update note:xxxxxxxxxxxxxxxx"
+
+27. git merge experimental
+
+28. git diff
+
+29. git branch -d experimental #delete branch
+
+30. git reset --hard Head^ #undo merge
+
+-------------git log-----------
+31. git log
+
+32. git log v2.5.. Makefile fs/
+
+33. git log --stat
+
+34. git log --pretty=oneline
+
+35. git log --graph --pretty=oneline
+
+
