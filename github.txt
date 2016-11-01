@@ -79,4 +79,39 @@ git diff --cached
 
 35. git log --graph --pretty=oneline
 
+--------------git mid class------------
+36. git grep    #search something
+
+37. git reset	;git checkou	;git revert
+
+38. git gc	;git fsck
+
+
+--------------check and fix -------------
+39. git bisect
+
+40. git blame
+
+
+-------------git and email--------------
+41. git format-patch origin
+
+42. git am -3 patches.mbox
+
+
+--------------make self git------------
+43. git config --global core.editor vim
+
+44. git config --global alias.last "cat-file commit Head"
+git last
+git cat-file commit HEAD
+
+45. git config color.branch auto
+git config color.diff auto
+git config color.ui true
+
+46.git hooks
+
+
+
 

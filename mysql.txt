@@ -1,0 +1,47 @@
+#Study mysql
+
+-----------install mysql---------------
+1. make sure mysql installed
+	sudo service mysql start
+
+2. install mysql by network
+	sudo apt-get install mysql-server
+	sudo apt-get install mysql-client
+	sudo netstat -tap |grep mysql	#install sucessful ?
+
+3. change mysql config
+	sudo gedit /etc/mysql/my.cnf
+
+
+4. logon mysql as root
+	mysql -u root
+
+5. create a DB
+	CREATE DATABASE mysql_shiyan;
+
+6. connect a DB
+	use mysql_shiyan
+
+7. show tables;
+
+8. CREATE TABLE table_name
+	(
+	column_name type(long)
+	column_name type(long)
+	column_name type(long)
+	);
+
+9. Date type
+	INT
+	FLOAT
+	DOUBLE
+	ENUM
+	SET
+	DATE
+	TIME
+	YEAR
+	CHAR
+	VARCHAR
+	TEXT
+
+10. INSERT INTO

@@ -1,0 +1,172 @@
+#VIM study record
+
+-----------Normal mode--------------
+1. press 'h','l','j','k','w','b'
+
+2. enter insert mode
+	i		I
+	a		A
+	o		O
+	cw
+
+3. save file
+	:w
+
+4. quit vim
+	:q
+
+5. save & quit
+	:x		:wq
+
+6. quit directly
+	:q!	
+
+7. delete text
+	x		X
+	dd		dw
+	d$(D)		d^
+	dG		d1G
+	3dd
+
+8. repeate operation
+	.
+
+9. repeate n operation
+	nx	#delete n=1,2,3...n char
+	ndd	#delete n=1,2,3...n line
+
+10. move to n line
+	nG	#move cursor to n=1,2,3...n line
+	gg	#move cursor to first line
+	G	#move cursor to end line
+
+11. move in line
+	w	#next word head
+	e	#next word end
+	b	#before word head
+	ge	#before word end
+	0	#line head
+	$	#line end
+	f(char)	#find char first match backword
+	F(char) #find char first match forward
+
+12. copy and paste
+	yy	#copy a line
+	y0	#copy cursor to line head
+	y$	#copy cursor to line end
+	yw	#copy a word
+	y2w	#copy 2 word
+	yG	#copy cursor to text end
+	y1G	#copy cursor to text head
+	p	#paste at cursor backward
+	P	#paste at cursor forward
+
+13. cut
+	dd	#cut a line
+	ddp	#switch up line with down line
+
+14. replace and undo
+	r(char)	#replace cursor's char
+	R(char)	#do replace cursor's char until press 'ESC'
+	cc	#replace a line and enter insert mode
+	cw	#replace a word and enter insert mode
+	C	#replace all cursor backward
+	~	#reverse char
+	u{n}	#undo 1 or n operation
+	U	#undo all operation in current line
+	Ctrl+r	#undo
+
+15. indent
+	>>	#indent a tab width
+	<<	#a line back a tab width
+
+16. set tab width
+	:set shiftwidth?
+	:set shiftwidth 10
+
+17. align:center right or left
+	:ce	#center
+	:ri	#right
+	:le	#left
+	
+17. find
+	/	#backward find
+	?	#forward find
+	n	#next backward
+	N	#next forward
+
+18. advanced find
+	\*	#find word at cursor
+	\#	#same up
+	n
+	N
+
+19. Edit many files
+	vim 1.txt 2.txt
+	:n	#switch file
+	:n!	#switch file force
+
+20. open a file in vim
+	:e filename	#open filename file
+	:e#	#back last file
+	:ls	#list opened files
+	:b filename or n	#enter the file insert mode
+	:bd filename or n	#delete file
+	:e! 4.txt	#force open 4.txt forget editing file
+	:f	#display edited filename
+	:f new.txt	#rename filename currently
+
+21. recovery a file
+	vim -r 1.txt
+	:ewcover 1.txt
+
+---------------display mode-----------
+22. enter display mode
+	v	#enter char select mode
+	shift+v	#enter line select mode
+	ctrl+v	#enter zoen select mode
+	d	#delete text selected
+	y	#copy text selected
+
+--------------window operation-------
+23. open a new window
+	:new	#open a new window
+	ctrl+w	#the same as above
+	:sp 1.txt	#open a new horizontal window
+	:vsp 2.txt 	#open a new vertical window
+	ctrl-w s	#split 2 horizontal window
+	ctrl-w v	#split 2 vertical window
+	ctrl-w q	#close window splited
+	ctrl-w o	#open a new window and hide other windows
+	ctrl-w j	#move to below window
+	ctrl-w k	#move to up window
+	ctrl-w h	#move to left window
+	ctrl-w l	#move to right window
+	ctrl-w J	#move current window to down
+	ctrl-w K	#mvoe current window to up
+	ctrl-w H	#move current window to left
+	ctrl-w L	#move current window to right
+	ctrl-w -	#reduce window's high
+	ctrl-w +	#increase window's high
+
+24. execute external cmd
+	:!ls
+	:!rm filename
+
+25. help
+	F1
+	:h shiftwidth
+	:ver
+
+26. set function
+	:set all	#display all set value
+	:set option?	#display option set value
+	:set nooption	#cancel current set value
+	:set autoindent(ai)	#set auto indent
+	:set autowrite(aw)	#set auto write
+	:set background=dark or light	#set background
+	:set backup	#set auto backup
+	:set cindent	#set c indent
+
+ 
+	
